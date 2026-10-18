@@ -1,6 +1,6 @@
 # Portrait and brand assets
 
-The professional portrait was edited with the built-in image generation tool from the photograph supplied by Prashant. The original was preserved.
+The website uses Prashant’s original photograph, unchanged, at assets/prashant-original.jpg. CSS crops its framing in the page. The previously generated portrait is retained as an unused alternative.
 
 Prompt: identity-preserving, square head-and-shoulders crop; preserve face, age, skin tone, hair, beard and expression; retain navy crewneck; soft cool gray-blue studio backdrop and natural lighting; no text or logos.
 
