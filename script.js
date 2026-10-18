@@ -11,9 +11,76 @@ document.querySelectorAll('[data-stage]').forEach(button=>button.addEventListene
  document.getElementById('stage-tools').textContent=stage.tools;
 }));
 const stories={
- pulsan:{company:'PULSAN OMSORG / 2025 — PRESENT',title:'A more deliberate way to run production.',context:'My current role combines day-to-day platform operations with infrastructure automation and migration work. The environment includes containerized microservices running on Kubernetes and Docker Swarm.',contributions:['Manage GitOps deployments using ArgoCD and automate infrastructure with Terraform and Ansible.','Lead migration work from Elastisys to self-hosted Kubernetes infrastructure.','Maintain Harbor container registries and administer GitHub workflows and webhooks.','Implement metrics, logs, and distributed tracing with Prometheus, Grafana, OpenSearch, Fluentd, OpenTelemetry, Jaeger, and Kibana.','Support alerting through Alertmanager integrated with Opsgenie.'],focus:'This work brings deployment, infrastructure, telemetry, and alerting into the same operational picture.',tools:'Kubernetes · Docker Swarm · ArgoCD · Terraform · Ansible · Harbor · Azure'},
- scania:{company:'SCANIA AB / 2024 — 2025',title:'More time for engineering. Less time provisioning.',context:'Automotive developers needed Ubuntu environments to support GPU-based simulations. My role covered provisioning, operating system rollouts, and monitoring of high-performance computing infrastructure.',contributions:['Automated provisioning of virtual desktops, laptops, and desktops using AWX and Ansible.','Managed operating system rollouts across developer devices, with a focus on seamless updates and minimal disruption.','Developed and maintained a monitoring platform for HPC clusters running in AWS Cloud.','Worked with Python, Terraform, and VMware vSphere across the infrastructure stack.'],focus:'The work connected developer environments with the automation and monitoring needed to support them.',tools:'AWS · AWX · Ansible · Python · Terraform · VMware vSphere'},
- fujitsu:{company:'FUJITSU AB / 2020 — 2024',title:'Behind the scenes of everyday retail.',context:'At Fujitsu, I worked on point-of-sale platforms for H&M and Primark. The role spanned software delivery, infrastructure administration, cloud migration, and client-facing technical work.',contributions:['Developed and maintained build and deployment processes for point-of-sale platforms.','Supported VMware administration and networking across platform environments.','Contributed to Azure cloud migration and infrastructure as code using Terraform.','Worked with Jenkins, Open Build Service, Rundeck, Ansible, Salt, Docker, and GitLab.','Translated client requirements into technical work through proofs of concept and ongoing collaboration.'],focus:'The role required connecting delivery pipelines with the infrastructure and client needs behind retail platforms.',tools:'Azure · Jenkins · GitLab · Docker · Ansible · Terraform · Python · Bash · Groovy'}
+  "pulsan": {
+    "company": "PULSEN OMSORG / 2025 — PRESENT",
+    "title": "Building the next chapter of the platform.",
+    "context": "As a Site Reliability Engineer, I combine day-to-day platform operations with the migration from an Elastisys-managed environment to our own Kubernetes cluster. My work spans cluster setup, GitOps delivery, data services, observability, and infrastructure automation.",
+    "contributions": [
+      "Help build and operate the new Kubernetes environment using Talos, Cilium, and ArgoCD, while supporting the existing platform throughout the migration.",
+      "Manage GitOps workflows and Harbor container registries to keep application configuration and delivery consistent.",
+      "Operate RabbitMQ, Redis, and PostgreSQL services; automate RabbitMQ user management with Terraform and use Ansible for environment configuration.",
+      "Maintain visibility and incident response tooling with Grafana, Prometheus, Grafana Alloy, OpenSearch, and Opsgenie.",
+      "Implement and explore AI-agent ideas within the platform, bringing an SRE perspective to their integration and operational requirements."
+    ],
+    "focus": "Connecting platform migration with the operational foundations that make a cluster maintainable: configuration, delivery, telemetry, messaging, and data services.",
+    "tools": "Kubernetes · Talos · Cilium · ArgoCD · GitOps · Harbor · RabbitMQ · Redis · PostgreSQL · Grafana · Prometheus · Alloy · OpenSearch · Opsgenie · Ansible · Terraform"
+  },
+  "scania": {
+    "company": "SCANIA AB / 2024 — 2025",
+    "title": "Cloud infrastructure for truck simulation.",
+    "context": "At Scania, I worked on an AWS-based environment for truck simulation testing. The work brought together HPC nodes, developer environments, monitoring, and automation to support engineering workloads.",
+    "contributions": [
+      "Contributed to the architecture and setup of simulation environments on AWS, with a focus on high-performance computing nodes and the infrastructure around them.",
+      "Investigated AWS HPC service options and Research and Engineering Studio (RES) for research and engineering environments.",
+      "Developed and maintained monitoring for AWS HPC clusters to support performance analysis and operational troubleshooting.",
+      "Automated user enrollment and environment configuration using Ansible and Rundeck.",
+      "Provisioned Ubuntu environments for GPU-based simulations, including virtual desktops and developer devices, using AWX and Ansible."
+    ],
+    "focus": "Making cloud computing resources usable for simulation engineers through infrastructure design, consistent environments, user access automation, and monitoring.",
+    "tools": "AWS · HPC · Research and Engineering Studio (evaluation) · Ansible · Rundeck · AWX · Python · Terraform · Ubuntu · VMware vSphere"
+  },
+  "fujitsu": {
+    "company": "FUJITSU AB / 2020 — 2024",
+    "title": "From Linux packages to the checkout.",
+    "context": "At Fujitsu, I worked across the full delivery lifecycle of point-of-sale solutions for H&M and Primark—from creating Linux packages to building, deploying, and maintaining software on physical POS hardware.",
+    "contributions": [
+      "Developed and maintained packages for SUSE Linux Enterprise Server (SLES), using Open Build Service (OBS) to build the software delivered to POS systems.",
+      "Worked across build pipelines, package deployment, and the operation of the end-to-end POS solution on retail hardware.",
+      "Contributed to extensive platform migration work, including changes to the underlying infrastructure and delivery environment.",
+      "Participated in architecture work for migrating the POS solution to Microsoft Azure.",
+      "Combined Jenkins, GitLab, Rundeck, Ansible, Salt, and scripting with VMware administration and networking to support platform delivery and maintenance."
+    ],
+    "focus": "Treating the retail platform as an end-to-end system: source, packages, build infrastructure, deployment, hardware, and the path toward cloud infrastructure.",
+    "tools": "SLES · Open Build Service · Azure · Jenkins · GitLab · Rundeck · Ansible · Salt · Docker · VMware · Terraform · Python · Bash · Groovy"
+  },
+  "cybercom": {
+    "company": "CYBERCOM AB / 2017 — 2020",
+    "title": "The infrastructure behind 5G testing.",
+    "context": "As a Cybercom consultant at Ericsson, I worked as a CI and automation engineer on baseband infrastructure supporting 5G delivery. Most of my time focused on configuring test nodes and preparing the environments required by new test cases.",
+    "contributions": [
+      "Maintained Jenkins pipelines and Job DSL code supporting continuous integration and automated test workflows.",
+      "Created a script-based framework for automatically selecting nodes for 5G test cases.",
+      "Configured test nodes comprising digital and radio units, and prepared the environment for new test scenarios.",
+      "Supported build environments and the infrastructure that connected software delivery with hardware-based testing.",
+      "Alongside the Ericsson assignment, contributed roughly 20% of my time to internal Cybercom projects, including AWS-related work."
+    ],
+    "focus": "Reducing manual coordination between CI pipelines, node selection, and test environment preparation so new 5G test cases had the infrastructure they needed.",
+    "tools": "Jenkins · Job DSL · CI automation · Baseband infrastructure · Digital units · Radio units · Build environments · AWS (internal projects)"
+  },
+  "aluminati": {
+    "company": "ALUMINATI NETWORK GROUP LIMITED / VIA TOPTAL",
+    "title": "A legacy stack. A 30-minute start.",
+    "context": "For my first Toptal client, Aluminati Network Group Limited, I modernized a legacy Ubuntu-based development environment. The original VM combined web, database, cache, search, and messaging services in a single environment.",
+    "contributions": [
+      "Decomposed Apache, MySQL, Redis, Elasticsearch, and RabbitMQ into modular Docker services orchestrated with Docker Compose.",
+      "Preserved service configuration and state using persistent volumes, with bootstrapped databases and secrets integration.",
+      "Created a developer-friendly setup with mounted Git repositories and dynamic database provisioning.",
+      "Integrated environment secrets handling through Bitwarden and avoided image rebuilds for routine source-code changes.",
+      "Enabled developers to bring up the full stack within 30 minutes, making onboarding faster and the environment easier to reproduce."
+    ],
+    "focus": "Preserving the behavior of a complex legacy environment while making local development modular, repeatable, and easier for a new developer to start.",
+    "tools": "Docker · Docker Compose · Ubuntu · Apache · MySQL · Redis · Elasticsearch · RabbitMQ · Git · Bitwarden"
+  }
 };
 const dialog=document.getElementById('story-dialog');
 let storyTrigger=null;
