@@ -12,3 +12,5 @@ Prompt: identity-preserving, square head-and-shoulders crop; preserve face, age,
 - ericsson: https://static.vscdn.net/images/careers/demo/ericsson/1685712695::Ericsson_favicon.png
 
 Company marks identify employers, clients, or the consulting platform; they do not imply endorsement. Toptal icon: theSVG (CC0); Fujitsu: Simple Icons v11 (CC0). Other marks are downloaded from the companies’ sites or their published asset hosts.
+
+Current displayed photo: assets/prashant-headshot-cropped.jpg. A 420 × 420 head-and-shoulders crop from the original at x=190, y=315; no generative edits or retouching. About Me displays it at 120 × 120 pixels in a circle.
